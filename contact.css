@@ -97,7 +97,7 @@ header.navbar {
     color: #fff;
     font-weight: 600;
   }
-  
+
 /* Contact Main Section */
 .contact-container {
     max-width: 1200px;
@@ -352,7 +352,7 @@ textarea.form-control {
     }
 
     .footer-container {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
 }
