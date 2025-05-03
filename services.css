@@ -405,7 +405,7 @@ header.navbar {
     margin-top: 30px;
 }
 
-/*Responsive Adjustments
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
     .services-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -461,7 +461,7 @@ header.navbar {
     .cta-btn {
         padding: 10px 20px;
     }
-}*/
+}
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
