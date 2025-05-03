@@ -90,6 +90,20 @@ header.navbar {
     transform: scale(1.05);
 }
 
+/* Mobile Nav (visible only on small screens) */
+.nav-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .nav-mobile a {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+  }
 
 /* Services Main Section */
 .services-container {
