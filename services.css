@@ -16,7 +16,6 @@ a {
     transition: all 0.3s ease;
 }
 
-
 /* Header Styles */
 header.navbar {
     display: flex;
@@ -32,9 +31,20 @@ header.navbar {
 }
 
 @keyframes fadeInHeader {
-    0% { opacity: 0; transform: translateY(-30px); }
-    50% { opacity: 0.5; transform: translateY(10px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .nav-left {
@@ -395,10 +405,11 @@ header.navbar {
     margin-top: 30px;
 }
 
-/* Responsive Adjustments */
+/*Responsive Adjustments
 @media (max-width: 1024px) {
     .services-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Smaller column size for tablets */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        
     }
 
     .nav-center {
@@ -420,7 +431,7 @@ header.navbar {
     .services-hero h1 {
         font-size: 2.2rem;
     }
-    
+
     .services-hero p {
         font-size: 1rem;
     }
@@ -449,5 +460,61 @@ header.navbar {
 
     .cta-btn {
         padding: 10px 20px;
+    }
+}*/
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+
+    /* Navbar Layout */
+    header.navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-center {
+        left: unset;
+        transform: unset;
+        position: relative;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Navbar Adjustments */
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-left {
+        margin-bottom: 15px;
+    }
+
+    .nav-center {
+        margin-bottom: 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
     }
 }

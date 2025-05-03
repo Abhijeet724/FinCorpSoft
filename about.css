@@ -373,6 +373,60 @@ header.navbar {
   margin-top: 30px;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  /* Navbar Layout */
+  header.navbar {
+      padding: 10px 20px;
+  }
+  
+  .nav-center {
+      left: unset;
+      transform: unset;
+      position: relative;
+      gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navbar Adjustments */
+  .navbar {
+      flex-direction: column;
+      padding: 15px;
+  }
+
+  .nav-left {
+      margin-bottom: 15px;
+  }
+
+  .nav-center {
+      margin-bottom: 15px;
+      flex-direction: column;
+      gap: 10px;
+  }
+  
+  /* Contact Section */
+  .contact-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+  }
+
+  .contact-info,
+  .contact-form {
+      padding: 20px;
+  }
+
+  .contact-info h2,
+  .contact-form h2 {
+      font-size: 1.5rem;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+}
+
 /* Animations */
 @keyframes fadeInLeft {
   0% { opacity: 0; transform: translateX(-40px); }
