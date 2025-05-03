@@ -24,7 +24,24 @@ header.navbar {
     top: 0;
     z-index: 1000;
     animation: fadeInHeader 1.5s ease-out forwards;
-}
+  }
+  
+  @keyframes fadeInHeader {
+    0% {
+      opacity: 0;
+      transform: translateY(-150px);
+    }
+  
+    50% {
+      opacity: 0.5;
+      transform: translateY(10px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 /* Navigation Styles */
 .nav-left {
