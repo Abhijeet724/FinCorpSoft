@@ -129,18 +129,20 @@ header.navbar {
     animation: bounceIn 1.2s ease forwards;
 }
 
+.contact-icon i {
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+}
+
 .contact-icon {
-    background: #B4D4FF;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    min-width: 50px;
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 15px;
-    color: #fff;
-    font-size: 1.2rem;
 }
+
 
 .contact-details h3 {
     font-size: 1.2rem;
