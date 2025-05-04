@@ -11,6 +11,7 @@ body {
   background: #B4D4FF;
   color: black;
 }
+
 /* Header Styles */
 header.navbar {
   display: flex;
@@ -30,12 +31,10 @@ header.navbar {
     opacity: 0;
     transform: translateY(-150px);
   }
-
   50% {
     opacity: 0.5;
     transform: translateY(10px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -82,7 +81,7 @@ header.navbar {
   transform: scale(1.05);
 }
 
-/* Mobile Nav (visible only on small screens) */
+/* Mobile Navigation */
 .nav-mobile {
   display: none;
   flex-direction: column;
@@ -97,7 +96,20 @@ header.navbar {
   font-weight: 600;
 }
 
-/* Inspiring Journey Section */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: all 0.3s;
+}
+
+/* Hero Section */
 .hero-bg {
   background: linear-gradient(rgba(0, 47, 95, 0.85), rgba(0, 47, 95, 0.9)),
                url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80') no-repeat center center/cover;
@@ -404,7 +416,7 @@ header.navbar {
   header.navbar {
       padding: 10px 20px;
   }
-  
+
   .nav-center {
       left: unset;
       transform: unset;
@@ -429,6 +441,29 @@ header.navbar {
       flex-direction: column;
       gap: 10px;
   }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg);
+      top: 6px;
+  }
+
+  .hamburger.active span:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg);
+      top: -6px;
+  }
+
+  .nav-mobile.active {
+      display: flex;
+  }
   
   /* Contact Section */
   .contact-container {
@@ -452,70 +487,3 @@ header.navbar {
   }
 }
 
-/* Animations */
-@keyframes fadeInLeft {
-  0% { opacity: 0; transform: translateX(-40px); }
-  100% { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes fadeInRight {
-  0% { opacity: 0; transform: translateX(40px); }
-  100% { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(40px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes bounceIn {
-  0% { opacity: 0; transform: scale(0.3); }
-  50% { transform: scale(1.05); }
-  70% { transform: scale(0.9); }
-  100% { opacity: 1; transform: scale(1); }
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-  }
-  
-  .stats {
-    flex-direction: column;
-  }
-  
-  .hero h1 {
-    font-size: 2.25rem;
-  }
-  
-  .hero-buttons {
-    flex-direction: column;
-  }
-  
-  .footer-container {
-    flex-direction: row;
-  }
-  
-  .ceo-container {
-    flex-direction: column;
-  }
-  
-  .ceo-image img {
-    width: 250px;
-    height: 250px;
-  }
-  
-  .navbar {
-      flex-direction: column;
-      padding: 15px;
-  }
-  
-  .nav-left {
-      margin-bottom: 15px;
-  }
-  
-  .nav-center {
-      margin-bottom: 15px;
-  }
-}

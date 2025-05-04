@@ -35,63 +35,58 @@ header.navbar {
       opacity: 0;
       transform: translateY(-150px);
     }
-  
     50% {
       opacity: 0.5;
       transform: translateY(10px);
     }
-  
     100% {
       opacity: 1;
       transform: translateY(0);
     }
   }
-
-.nav-left {
+  
+  /* Navigation Styles */
+  .nav-left {
     display: flex;
     align-items: center;
     animation: bounceInLeft 1s ease-out;
-}
-
-.logo {
+  }
+  
+  .logo {
     height: 75px;
     margin-right: 10px;
-}
-
-#home {
-    color: #fff;
-}
-
-.company-name {
+  }
+  
+  .company-name {
     font-size: 1.6rem;
     font-weight: bold;
     color: #fff;
-}
-
-.nav-center {
+  }
+  
+  .nav-center {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 25px;
     animation: bounceInRight 1s ease-out;
-}
-
-.nav-center a {
+  }
+  
+  .nav-center a {
     color: #fff;
     font-weight: 500;
     font-size: 1rem;
     position: relative;
     transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.nav-center a:hover {
-    color: #fff;
+  }
+  
+  .nav-center a:hover {
+    color: black;
     transform: scale(1.05);
-}
-
-/* Mobile Nav (visible only on small screens) */
-.nav-mobile {
+  }
+  
+  /* Mobile Navigation */
+  .nav-mobile {
     display: none;
     flex-direction: column;
     gap: 10px;
@@ -104,7 +99,19 @@ header.navbar {
     color: #fff;
     font-weight: 600;
   }
-
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: all 0.3s;
+  }
 /* Services Main Section */
 .services-container {
     max-width: 1200px;
@@ -165,7 +172,6 @@ header.navbar {
 .service-card:nth-child(even) {
     animation: bounceInRight 1s ease-out forwards;
 }
-
 
 .service-img {
     height: 200px;
@@ -421,114 +427,79 @@ header.navbar {
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-    .services-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        
-    }
-
-    .nav-center {
-        gap: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .nav-center {
-        gap: 15px;
-        margin-top: 20px;
-    }
-
-    .services-hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .services-hero p {
-        font-size: 1rem;
-    }
-
-    .cta-section h2 {
-        font-size: 1.6rem;
-    }
-
-    .cta-section p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .service-img {
-        font-size: 2.5rem;
-    }
-
-    .service-content h3 {
-        font-size: 1.3rem;
-    }
-
-    .service-content p {
-        font-size: 1rem;
-    }
-
-    .cta-btn {
-        padding: 10px 20px;
-    }
-}
-
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-
     /* Navbar Layout */
     header.navbar {
         padding: 10px 20px;
     }
-
+  
     .nav-center {
         left: unset;
         transform: unset;
         position: relative;
         gap: 15px;
     }
-}
-
-@media (max-width: 768px) {
-
+  }
+  
+  @media (max-width: 768px) {
     /* Navbar Adjustments */
     .navbar {
         flex-direction: column;
         padding: 15px;
     }
-
+  
     .nav-left {
         margin-bottom: 15px;
     }
-
+  
     .nav-center {
         margin-bottom: 15px;
         flex-direction: column;
         gap: 10px;
     }
-
+  
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+  
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 6px;
+    }
+  
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+  
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -6px;
+    }
+  
+    .nav-mobile.active {
+        display: flex;
+    }
+    
     /* Contact Section */
     .contact-container {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
+  
     .contact-info,
     .contact-form {
         padding: 20px;
     }
-
+  
     .contact-info h2,
     .contact-form h2 {
         font-size: 1.5rem;
     }
-
+  
     .footer-container {
-        flex-direction: row;
+        flex-direction: column;
         text-align: center;
     }
-}
+  }
+  
+  

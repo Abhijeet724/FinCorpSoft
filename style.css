@@ -31,12 +31,10 @@ header.navbar {
     opacity: 0;
     transform: translateY(-150px);
   }
-
   50% {
     opacity: 0.5;
     transform: translateY(10px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -54,7 +52,6 @@ header.navbar {
   height: 75px;
   margin-right: 10px;
 }
-
 
 .company-name {
   font-size: 1.6rem;
@@ -84,7 +81,7 @@ header.navbar {
   transform: scale(1.05);
 }
 
-/* Mobile Nav (visible only on small screens) */
+/* Mobile Navigation */
 .nav-mobile {
   display: none;
   flex-direction: column;
@@ -99,6 +96,18 @@ header.navbar {
   font-weight: 600;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: all 0.3s;
+}
 /* Product Info */
 .product-info {
   padding: 10px 10px;
