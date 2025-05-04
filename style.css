@@ -325,6 +325,9 @@ header.navbar {
 @media (max-width: 768px) {
 
   /* Navbar Adjustments */
+  .logo {
+    height: 50px;
+}
   .navbar {
       flex-direction: column;
       padding: 15px;

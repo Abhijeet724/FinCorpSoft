@@ -428,6 +428,9 @@ header.navbar {
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
     /* Navbar Layout */
+    .logo {
+        height: 50px;
+    }
     header.navbar {
         padding: 10px 20px;
     }
