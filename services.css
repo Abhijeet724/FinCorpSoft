@@ -428,9 +428,7 @@ header.navbar {
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
     /* Navbar Layout */
-    .logo {
-        height: 50px;
-    }
+   
     header.navbar {
         padding: 10px 20px;
     }
@@ -445,6 +443,17 @@ header.navbar {
   
   @media (max-width: 768px) {
     /* Navbar Adjustments */
+    .company-name {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .logo {
+        height: 50px;
+    }
+
+
     .navbar {
         flex-direction: column;
         padding: 15px;
