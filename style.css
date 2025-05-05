@@ -338,6 +338,12 @@ header.navbar {
     height: 50px;
   }
 
+  .product-info h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 5px;
+  }
+
   .flip-card {
     background-color: transparent;
     perspective: 1000px;
