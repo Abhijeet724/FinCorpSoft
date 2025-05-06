@@ -331,6 +331,8 @@ header.navbar {
     font-size: 2rem;
     color: #000;
     margin-bottom: 5px;
+    animation: fadeIn 1s forwards;
+
   }
 
   .flip-card {
