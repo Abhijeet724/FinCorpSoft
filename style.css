@@ -337,6 +337,7 @@ header.navbar {
   .logo {
     height: 30px;
   }
+  
 
   .product-info h2 {
     font-size: 2rem;
@@ -370,6 +371,12 @@ header.navbar {
     margin-bottom: 15px;
     flex-direction: column;
     gap: 10px;
+  }
+
+  .company-description p {
+    font-size: 0.7rem;
+    line-height: 1.5;
+    margin-bottom: 18px;
   }
 
   /* Contact Section */
