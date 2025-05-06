@@ -483,6 +483,12 @@ header.navbar {
     display: flex;
   }
 
+  .footer-img {
+    display: block;
+    margin: 0 auto 10px;
+    height: 50px;
+  }
+
   /* Contact Section */
   .contact-container {
     grid-template-columns: 1fr;
