@@ -170,7 +170,7 @@ header.navbar {
   margin-top: 2rem;
   margin-bottom: 2rem;
   background-color: #B4D4FF;
-  animation: fadeInUp 1.2s ease-out;
+  animation: fadeInUp 2s ease-out;
 }
 
 .about-content {
@@ -460,24 +460,7 @@ header.navbar {
     gap: 10px;
   }
 
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg);
-    top: 6px;
-  }
-
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg);
-    top: -6px;
-  }
+ 
 
   .nav-mobile.active {
     display: flex;
