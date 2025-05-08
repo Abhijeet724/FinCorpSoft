@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fincorp Software Solutions</title>
+    <title>FinCorp Software Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link rel="icon" href="favicon-logo.jpg" type="image/x-icon" />
@@ -14,8 +14,10 @@
     <!-- Navbar -->
     <header class="navbar">
       <div class="nav-left">
-        <img src="Fincorp Logo.jpg" alt="Fincorp Logo" class="logo" />
-        <span class="company-name">FinCorp Software Solutions</span>
+        <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+          <img src="Fincorp Logo.jpg" alt="Fincorp Logo" class="logo" />
+          <span class="company-name">FinCorp Software Solutions</span>
+        </a>
       </div>
 
       <!-- Desktop Navbar -->
@@ -39,21 +41,7 @@
 
       <!-- Mobile Menu Icon (Hamburger) -->
       <div class="lg:hidden flex items-center" id="menu-icon">
-        <!-- Changed hamburger icon to a simple SVG hamburger -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-8 w-8 text-white"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
+        <i class="fas fa-bars text-white text-3xl"></i>
       </div>
     </header>
 
@@ -78,6 +66,7 @@
                 Use Big Data tools like Power BI to generate actionable insights
                 from complex financial data.
               </div>
+
             </div>
           </div>
           <div class="flip-card" onclick="this.classList.toggle('flipped')">
