@@ -403,13 +403,13 @@
       @media (max-width: 768px) {
         /* Navbar Adjustments */
         .company-name {
-          font-size: 1.2rem;
+          font-size: 1rem;
           font-weight: bold;
           color: #fff;
         }
 
         .logo {
-          height: 50px;
+          height: 40px;
         }
 
         .mobile-nav-container {
