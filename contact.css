@@ -385,6 +385,11 @@
           flex-direction: row;
           text-align: center;
         }
+        .footer-img {
+          display: block;
+          margin: 0 auto 10px;
+          height: 50px;
+        }
       }
 
       @media (max-width: 480px) {
